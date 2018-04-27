@@ -25,6 +25,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * @author vondear
+ */
 public class ActivityDialog extends ActivityBase {
 
     @BindView(R.id.button_tran)
@@ -182,7 +185,7 @@ public class ActivityDialog extends ActivityBase {
                 break;
             case R.id.button_DialogScaleView:
                 RxDialogScaleView rxDialogScaleView = new RxDialogScaleView(mContext);
-                rxDialogScaleView.setImageAssets("squirrel.jpg");
+                rxDialogScaleView.setImage("squirrel.jpg",true);
                 rxDialogScaleView.show();
                 break;
             default:
